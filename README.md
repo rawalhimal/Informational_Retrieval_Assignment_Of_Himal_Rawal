@@ -4,9 +4,14 @@ The document clustering and search system is a tool that helps organize and retr
 Summary:
 This project incorporates a thorough system for organizing and searching documents. It is divided into two main components, which are located in the inside utils folder.
 
-Search_engine_utils (ques1): encompasses modules for crawling, indexing, and searching publications.
-Clustering_utils (ques2): specializes in document clustering, data preprocessing, and evaluating clustering results.
+Search_engine_utils (ques1): 
+encompasses modules for crawling, indexing, and searching publications.
+
+Clustering_utils (ques2):
+specializes in document clustering, data preprocessing, and evaluating clustering results.
+
 Project Framework.
+
 Data/: contains data extracted.
 The model/vectorizer contains clustering capabilities.
 Static: contains image for website.
@@ -45,13 +50,8 @@ This module will save the most effective model and vectorizer which will be util
 
 Python clustering_main.py.
 Webpage:
-
 To launch the website.
-
 Python app_main.py
-
-
 Logs:
-
 These two folders are disregarded.
 
