@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine and Document Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 80vh;
+            gap: 20px;
+            padding-top: 50px;
+        }
+        form {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        input[type="text"], textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #ffffff;
+            padding: 10px;
+            border-top: 2px solid #ddd;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='college_logo.png') }}" alt="College Logo">
+        <h1>Himal Rawal Assignment</h1>
+    </header>
+    <div class="container">
+        <form action="/" method="post">
+            <h1>Search Engine</h1>
+            <input type="text" name="query" placeholder="Enter your search query" required>
+            <button type="submit">Search</button>
+        </form>
+        <form action="/" method="post">
+            <h1>Document Clustering</h1>
+            <textarea name="document" placeholder="Enter your document text" rows="6" required></textarea>
+            <button type="submit">Classify</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Softwarica. All rights reserved.</p>
+    </footer>
+</body>
+</html>

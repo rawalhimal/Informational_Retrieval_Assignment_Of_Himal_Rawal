@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classify Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Document Clustering Result</h1>
+        <p><strong>Document:</strong> {{ document }}</p>
+        <p><strong>Cluster ID:</strong> {{ cluster }}</p>
+        {% if cluster_info %}
+            <h2>Cluster Details</h2>
+            <p><strong>Top Terms:</strong> {{ cluster_info.terms | join(', ') }}</p>
+            <p><strong>Sample Documents:</strong></p>
+            <ul>
+                {% for doc in cluster_info.sample_documents %}
+                    <li>{{ doc }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No details available for this cluster.</p>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+2024-07-29 15:43:34,903 - WebCrawlerLogger - INFO - Crawl Program started.
+2024-07-29 15:43:37,297 - WebCrawlerLogger - INFO - User selected to run the crawler manually.
+2024-07-29 15:43:37,297 - WebCrawlerLogger - INFO - Starting manual crawl.
+2024-07-29 15:43:37,297 - WebCrawlerLogger - INFO - Starting the scheduled crawling job.
+2024-07-29 15:43:37,298 - WebCrawlerLogger - INFO - Starting web crawling process.
+2024-07-29 15:43:37,299 - WebCrawlerLogger - INFO - Fetching profile details.
+2024-07-29 15:43:37,299 - WebCrawlerLogger - INFO - Checking robots.txt for URL: https://pureportal.coventry.ac.uk
+2024-07-29 15:43:37,591 - WebCrawlerLogger - INFO - Robots.txt read successfully.
+2024-07-29 15:43:39,541 - WebCrawlerLogger - INFO - https://pureportal.coventry.ac.uk/en/organisations/eec-school-of-computing-mathematics-and-data-sciences-cmds//persons/
+2024-07-29 15:43:39,673 - WebCrawlerLogger - INFO - Profile details retrieved.
+2024-07-29 15:43:39,675 - WebCrawlerLogger - INFO - Fetching publication details.
+2024-07-29 15:43:41,779 - WebCrawlerLogger - INFO - All publication details fetched.
+2024-07-29 15:43:41,780 - WebCrawlerLogger - INFO - Saving publication details to CSV file.
+2024-07-29 15:43:41,799 - WebCrawlerLogger - INFO - Publication details saved successfully to 'data/publications.csv'.
+2024-07-29 15:43:41,800 - WebCrawlerLogger - INFO - Saving profile links to CSV file.
+2024-07-29 15:43:41,803 - WebCrawlerLogger - INFO - Profile links saved successfully to 'data/profiles.csv'.
+2024-07-29 15:43:41,803 - WebCrawlerLogger - INFO - Web crawling process completed.
+2024-07-29 15:43:41,804 - WebCrawlerLogger - INFO - New data available and saved successfully.
+2024-07-29 15:43:41,804 - WebCrawlerLogger - INFO - Scheduled crawling job completed.
+2024-07-29 15:43:41,804 - WebCrawlerLogger - INFO - Manual crawl completed.
+2024-07-29 15:43:41,805 - WebCrawlerLogger - INFO - Crawl Program ended. 
+
+
+2024-07-29 15:44:15,160 - WebCrawlerLogger - INFO - Starting model training and saving process.
+2024-07-29 15:44:15,162 - WebCrawlerLogger - INFO - Fetching and preprocessing documents.
+2024-07-29 15:45:58,741 - WebCrawlerLogger - INFO - Evaluating model with 2 clusters...
+2024-07-29 15:45:59,077 - WebCrawlerLogger - INFO - Cluster details for 2 clusters:
+2024-07-29 15:45:59,077 - WebCrawlerLogger - INFO - Cluster 0: Top Terms - ['say', 'new', 'ai', 'star', 'help', 'firm', 'game', 'uk', 'bbc', 'leader']
+2024-07-29 15:45:59,078 - WebCrawlerLogger - INFO - Cluster 1: Top Terms - ['life', 'tech', 'die', 'animal', 'old', 'athlete', 'technology', 'cnn', 'cancer', 'join']
+2024-07-29 15:45:59,079 - WebCrawlerLogger - INFO - Cluster count: 2, Silhouette Score: 0.00749654318677083
+2024-07-29 15:45:59,079 - WebCrawlerLogger - INFO - Evaluating model with 3 clusters...
+2024-07-29 15:45:59,100 - WebCrawlerLogger - INFO - Cluster details for 3 clusters:
+2024-07-29 15:45:59,101 - WebCrawlerLogger - INFO - Cluster 0: Top Terms - ['ai', 'tech', 'life', 'use', 'artificial', 'intelligence', 'help', 'animal', 'game', 'athlete']
+2024-07-29 15:45:59,101 - WebCrawlerLogger - INFO - Cluster 1: Top Terms - ['star', 'year', 'film', 'uk', 'story', 'day', 'die', 'world', 'starmer', 'hit']
+2024-07-29 15:45:59,102 - WebCrawlerLogger - INFO - Cluster 2: Top Terms - ['say', 'new', 'mp', 'team', 'leader', 'sunak', 'rishi', 'replace', 'help', 'run']
+2024-07-29 15:45:59,103 - WebCrawlerLogger - INFO - Cluster count: 3, Silhouette Score: 0.008515121303580687
+2024-07-29 15:45:59,104 - WebCrawlerLogger - INFO - Evaluating model with 4 clusters...
+2024-07-29 15:45:59,131 - WebCrawlerLogger - INFO - Cluster details for 4 clusters:
+2024-07-29 15:45:59,132 - WebCrawlerLogger - INFO - Cluster 0: Top Terms - ['ai', 'tech', 'life', 'use', 'artificial', 'intelligence', 'help', 'animal', 'game', 'athlete']
+2024-07-29 15:45:59,132 - WebCrawlerLogger - INFO - Cluster 1: Top Terms - ['star', 'film', 'bbc', 'world', 'hit', 'paris', 'story', 'record', 'die', 'read']
+2024-07-29 15:45:59,133 - WebCrawlerLogger - INFO - Cluster 2: Top Terms - ['say', 'new', 'team', 'firm', 'plan', 'run', 'help', 'mp', 'woman', 'way']
+2024-07-29 15:45:59,133 - WebCrawlerLogger - INFO - Cluster 3: Top Terms - ['minister', 'sunak', 'leader', 'replace', 'rishi', 'starmer', 'conservative', 'election', 'prime', 'party']
+2024-07-29 15:45:59,134 - WebCrawlerLogger - INFO - Cluster count: 4, Silhouette Score: 0.010821113143105897
+2024-07-29 15:45:59,134 - WebCrawlerLogger - INFO - Evaluating model with 5 clusters...
+2024-07-29 15:45:59,167 - WebCrawlerLogger - INFO - Cluster details for 5 clusters:
+2024-07-29 15:45:59,167 - WebCrawlerLogger - INFO - Cluster 0: Top Terms - ['ai', 'tech', 'life', 'use', 'artificial', 'intelligence', 'help', 'animal', 'game', 'athlete']
+2024-07-29 15:45:59,168 - WebCrawlerLogger - INFO - Cluster 1: Top Terms - ['star', 'bbc', 'year', 'world', 'story', 'day', 'read', 'outage', 'hit', 'late']
+2024-07-29 15:45:59,169 - WebCrawlerLogger - INFO - Cluster 2: Top Terms - ['say', 'team', 'woman', 'health', 'run', 'coach', 'microsoft', 'biden', 'firm', 'way']
+2024-07-29 15:45:59,170 - WebCrawlerLogger - INFO - Cluster 3: Top Terms - ['minister', 'sunak', 'leader', 'replace', 'rishi', 'starmer', 'conservative', 'prime', 'election', 'party']
+2024-07-29 15:45:59,170 - WebCrawlerLogger - INFO - Cluster 4: Top Terms - ['film', 'new', 'history', 'star', 'night', 'champion', 'launch', 'month', 'want', 'country']
+2024-07-29 15:45:59,171 - WebCrawlerLogger - INFO - Cluster count: 5, Silhouette Score: 0.010173519239627282
+2024-07-29 15:45:59,197 - WebCrawlerLogger - INFO - Best model with 4 clusters saved successfully.
+2024-07-29 15:45:59,198 - WebCrawlerLogger - INFO - Model training and saving process completed.
+2024-07-29 15:46:12,323 - WebCrawlerLogger - INFO - Starting the creation of the inverted index.
+2024-07-29 15:46:12,324 - WebCrawlerLogger - INFO - Loading data from data/publications.csv.
+2024-07-29 15:46:12,355 - WebCrawlerLogger - INFO - Loaded data with 41 entries.
+2024-07-29 15:46:12,380 - WebCrawlerLogger - INFO - Inverted index creation completed.
+2024-07-29 15:46:15,939 - WebCrawlerLogger - INFO - Starting the creation of the inverted index.
+2024-07-29 15:46:15,939 - WebCrawlerLogger - INFO - Loading data from data/publications.csv.
+2024-07-29 15:46:15,943 - WebCrawlerLogger - INFO - Loaded data with 41 entries.
+2024-07-29 15:46:15,962 - WebCrawlerLogger - INFO - Inverted index creation completed.
